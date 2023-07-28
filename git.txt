@@ -1,0 +1,46 @@
+git --version  --> To check the version of git
+git config  --> You will get all the feature after git config which you can use
+git config --get user.name  --> To get username
+git config --get user.email  --> To get useremail
+git config --set user.name "Enter your username"  --> To set username
+git config --set user.email "Enter your useremail"  --> To set useremail
+NOTE: Space will be converted into - while setting username and useremail
+git config --global code.editor "code --wait"  -->To change git default text editor to VS code
+NOTE: To use linux command in window, use gitbash instead of command prompt or you can use powershell (window default text editor)
+mkdir English  --> To make a new directory
+cd English  --> To go to English directory
+code .  --> It will open VS code in English directory
+git init  --> To initialize directory or tracking the history of directory
+ls  --> You will get the listing of all files which is present in directory
+ls -a  --> To get the hidden files of directory also
+NOTE: Hidden files start from .
+cd ..  --> To go to previous directory
+git add. sonu.html command will add all new and modified files in the current directory and its subdirectories to the stagging areas
+git add* sonu.html command will add all new, modified and deleted files in the current directory and its subdirectories to the stagging areas
+git status  --> To check the staus, is it commited or in staging?
+git commit -m "my first commit"
+
+.gitignore  --> In this file we will write the file, folder, img etc name so this folder can't go to github
+For file, write full name of file eg. index.html, sonu.txt etc.
+For folder or directory, write folder name/ eg. sonu/
+For img, write *.png
+
+git branch  -->
+git branch Sonu  --> It will create Sonu namak branch
+git checkout Sonu  --> To switch branch
+git checkout -b "Branch name"  --> To create and switch to the branch
+git merge masterBranchName  --> To merge branch
+git branch -M branchName  --> To rename master branch 
+
+Connection local system with github
+ssh-keygen -t rsa -b 4096 -C "takeinfo2u@gmail.com"  --> 1st command on git bash
+step2 Copy rsapub from .ssh(hidden files and paste it on ssh on github)
+
+
+Now if any repo have connected with github then when we add another or update files in repo then we need to follow this step..
+1. git add .
+2. git commit -m "message"
+3. git push
+After this three step folder will be automatically upadte in github
+
+To share my repo to other copy http and write commnad ---- git clone https://github.com/sonu2027/HTML.git(http link)
